@@ -27,7 +27,7 @@ def write_to_log(data, log_file, read_number):
 
 
 # Define the log file
-log_file = "log.txt"
+log_file = "vid-log.txt"
 
 # Delete the old log file if it exists
 if os.path.exists(log_file):
