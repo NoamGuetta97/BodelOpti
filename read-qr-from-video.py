@@ -2,10 +2,9 @@ import os
 import cv2
 import json
 import pyzbar.pyzbar as pyzbar
+import time
 
 # Define a function to decode QR codes from a video frame
-
-
 def decode_qr(frame):
     # Decode the QR codes in the frame
     decoded_objects = pyzbar.decode(frame)
@@ -14,17 +13,14 @@ def decode_qr(frame):
     return [json.loads(obj.data.decode("utf-8")) for obj in decoded_objects if obj.data.decode("utf-8").startswith('{')]
 
 # Define a function to write JSON data to a log file
-
-
-def write_to_log(data, log_file, read_number):
+def write_to_log(data, log_file, read_number, timestamp):
     with open(log_file, "a") as f:
         # Write the read number to the file
-        f.write(f"Read number {read_number}:\n")
+        f.write(f"Read number {read_number} (Timestamp: {timestamp:.4f}):\n")
 
         # Write the data to the file in a pretty, indented format
         f.write(json.dumps(data, indent=4))
         f.write("\n")
-
 
 # Define the log file
 log_file = "vid-log.txt"
@@ -40,7 +36,7 @@ read_number = 1
 last_id = None
 
 # Open the default camera
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while (cap.isOpened()):
     # Read a frame from the video
@@ -48,14 +44,22 @@ while (cap.isOpened()):
 
     # If the frame was read successfully
     if ret:
+        # Record the start time
+        start_time = time.time()
+
         # Decode the QR codes in the frame
         data = decode_qr(frame)
+
+        # Calculate the time taken to decode
+        end_time = time.time()
+        elapsed_time = end_time - start_time
 
         # Write the decoded data to the log file
         for item in data:
             # If the ID is different from the last ID
             if item.get("ID") != last_id:
-                write_to_log(item, log_file, read_number)
+                # Write data with timestamp to log file
+                write_to_log(item, log_file, read_number, elapsed_time)
                 read_number += 1
 
                 # Update the last ID

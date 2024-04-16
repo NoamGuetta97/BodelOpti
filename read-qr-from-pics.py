@@ -17,13 +17,12 @@ def decode_qr(image_path):
     # Return the decoded data
     return [json.loads(obj.data.decode("utf-8")) for obj in decoded_objects]
 
+
 # Define a function to write JSON data to a log file
-
-
-def write_to_log(data, log_file, read_number):
+def write_to_log(data, log_file, read_number, timestamp):
     with open(log_file, "a") as f:
         # Write the read number to the file
-        f.write(f"Read number {read_number}:\n")
+        f.write(f"Read number {read_number} (Timestamp: {timestamp:.4f}):\n")
 
         # Write the data to the file in a pretty, indented format
         f.write(json.dumps(data, indent=4))
@@ -60,12 +59,20 @@ start_time = time.time()
 for filename in os.listdir(folder):
     # If the file is an image
     if filename.endswith(".png") or filename.endswith(".jpg"):
+
+        # Record the start time
+        start_time = time.time()
+
         # Decode the QR codes in the image
         data = decode_qr(os.path.join(folder, filename))
 
+        # Calculate the time taken to decode
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+
         # Write the decoded data to the log file
         for item in data:
-            write_to_log(item, log_file, read_number)
+            write_to_log(item, log_file, read_number,elapsed_time)
             read_number += 1
 
 # Print the execution time
