@@ -1,0 +1,73 @@
+{
+    "chunk": 
+    {
+        "id": 311, 
+        "num_parts": 242, 
+        "part_idx": 158
+    }, 
+    "system": 
+    {
+        "system_id": 37, 
+        "operator_pos": 
+    {
+        "lat": -172.586018, 
+        "lng": -54.238522
+    }
+    }, 
+    "polygons": 
+    [
+        {
+            "type": 436, 
+            "coordinates": 
+            [
+                {
+                    "lat": -110.19064, 
+                    "lng": -87.646628
+                }
+            ]
+        }
+    ], 
+    "detections": 
+    [
+        {
+            "id": "ppbkhnsivp", 
+            "time": 349, 
+            "last_pos": 
+        {
+            "lat": -14.41774, 
+            "lng": 6.329469, 
+            "alt": 18.479388, 
+            "time": 353
+        }, 
+        "home_pos": 
+        {
+            "lat": 45.917759, 
+            "lng": -18.271259, 
+            "alt": 23.862727, 
+            "time": 392
+        }, 
+        "operator_pos": 
+        {
+            "lat": -49.386256, 
+            "lng": 119.507274, 
+            "alt": -101.088896, 
+            "time": 637
+        }, 
+        "velocity": 
+        {
+            "x": 72.930731, 
+            "y": -133.73613, 
+            "z": -118.818211
+        }, 
+        "detected_by": "Radar", 
+        "seconds_to_impact": 931, 
+        "friendly_status": "ENEMY", 
+        "active": "True", 
+        
+        "model": "cjswfspqna", 
+        "frequency": "uqyogbbtbd", 
+        "track_type": "fhmqaxagzs", 
+        "azimuth": -3.429229
+    }
+]
+}

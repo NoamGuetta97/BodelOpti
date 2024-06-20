@@ -62,7 +62,7 @@ def write_to_log(data, log_file, read_number, timestamp, changed_params=None):
         f.write("\n")
 
 # Define the log file
-log_file = "vid-log.txt"
+log_file = "vid-log2.txt"
 
 # Create an empty log file if it doesn't exist
 if not os.path.exists(log_file):

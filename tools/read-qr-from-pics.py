@@ -76,7 +76,7 @@ for filename in os.listdir(folder):
             read_number += 1
 
 # Print the execution time
-print_execution_time(start_time)
+#print_execution_time(start_time)
 
 print(
     f"The QR codes from the images in the {folder} folder have been successfully decoded and written to the {log_file} file.")

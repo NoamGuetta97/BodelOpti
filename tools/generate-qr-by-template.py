@@ -4,7 +4,7 @@ import random
 import string
 from PIL import Image
 
-# Your JSON template
+#  JSON templates
 template = {
     "ID": "1",
     "info": "Test.",

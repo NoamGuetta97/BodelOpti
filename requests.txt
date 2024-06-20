@@ -1,5 +1,0 @@
-os
-opencv-python-headless
-json
-pyzbar
-opencv-python
