@@ -1,4 +1,4 @@
-#!C:\Users\User\Desktop\readqr\venv\Scripts\python.exe
+#!C:\Users\User\Desktop\projects\QR-reader\venv\Scripts\python.exe
 from __future__ import print_function
 
 import argparse

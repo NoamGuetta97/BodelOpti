@@ -1,1 +1,544 @@
-[]
+{
+    "chunk": {
+        "id": 23,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 44,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 46,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 48,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 50,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 52,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 54,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 56,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 58,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 60,
+        "num_parts": 1,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": null,
+            "lng": null
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": [
+        null
+    ]
+}
+{
+    "chunk": {
+        "id": 62,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
+{
+    "chunk": {
+        "id": 71,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
+{
+    "chunk": {
+        "id": 72,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
+{
+    "chunk": {
+        "id": 73,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
+{
+    "chunk": {
+        "id": 74,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
+{
+    "chunk": {
+        "id": 75,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
+{
+    "chunk": {
+        "id": 85,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
+{
+    "chunk": {
+        "id": 86,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
+{
+    "chunk": {
+        "id": 87,
+        "num_parts": 2,
+        "part_idx": 1
+    },
+    "system": {
+        "system_id": 1,
+        "operator_pos": {
+            "lat": 31.226401861624968,
+            "lng": 34.81832113441035
+        }
+    },
+    "polygons": [
+        {
+            "type": 1,
+            "coordinates": [
+                {
+                    "lat": 33.26886360068933,
+                    "lng": 34.80076040496184
+                },
+                {
+                    "lat": 33.23210163670207,
+                    "lng": 36.29444140438081
+                },
+                {
+                    "lat": 29.594130983385433,
+                    "lng": 35.086317066615486
+                },
+                {
+                    "lat": 31.39324286566966,
+                    "lng": 34.207681184604326
+                }
+            ]
+        }
+    ],
+    "detections": []
+}
