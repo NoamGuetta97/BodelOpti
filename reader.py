@@ -2,6 +2,8 @@ import os
 import cv2
 import json
 import pyzbar.pyzbar as pyzbar
+from datetime import datetime, timedelta
+from validate import validate_json
 
 # Define a function to decode QR codes from a video frame
 def decode_qr(frame):
@@ -28,38 +30,57 @@ def write_to_log(data, log_file):
         print(f"Error processing data: {e}")
 
 
-# Define the log file
-log_file = "vid-log2.json"
 
-# Delete the old log file if it exists
-if os.path.exists(log_file):
-    os.remove(log_file)
-    print(f"Deleted old log file: {log_file}")
 
-# Set to keep track of already processed QR codes
-processed_qr_codes = set()
 
-# Open the default camera
-cap = cv2.VideoCapture(1)  # Changed to 1 to use the connected camera
 
-if not cap.isOpened():
-    print("Error: Could not open video capture.")
-else:
-    print("Video capture opened successfully.")
 
-while cap.isOpened():
-    ret, frame = cap.read()
+def main():
+    # Define the log file
+    log_file = "vid-log2.json"
 
-    if ret:
-        decoded_qr_data = decode_qr(frame)
+    # Delete the old log file if it exists
+    if os.path.exists(log_file):
+        os.remove(log_file)
+        print(f"Deleted old log file: {log_file}")
 
-        for qr_data in decoded_qr_data:
-            if qr_data not in processed_qr_codes:
-                # print(f"Decoded QR data: {qr_data}")  # Print the QR data for debugging
-                write_to_log(qr_data, log_file)
-                processed_qr_codes.add(qr_data)
+    # Set to keep track of already processed QR codes
+    processed_qr_codes = set()
+
+    #set the time for clearing the processed_qr_codes set
+    time_to_delete = datetime.now()
+
+    # Open the default camera
+    cap = cv2.VideoCapture(0)  # Changed to 1 to use the connected camera
+
+    if not cap.isOpened():
+        print("Error: Could not open video capture.")
     else:
-        print("Error: Could not read frame.")
-        break
+        print("Video capture opened successfully.")
 
-cap.release()
+    while cap.isOpened():
+        ret, frame = cap.read()
+        
+        if ret:
+            decoded_qr_data = decode_qr(frame)
+
+            for qr_data in decoded_qr_data:
+                if qr_data not in processed_qr_codes:
+                    # print(f"Decoded QR data: {qr_data}")  # Print the QR data for debugging
+                    if validate_json(qr_data):
+                        write_to_log(qr_data, log_file)
+                        processed_qr_codes.add(qr_data)
+
+            if datetime.now() - time_to_delete > timedelta(seconds=60):
+                processed_qr_codes.clear()
+                time_to_delete = datetime.now()
+                print("Deleted set processed_qr_codes...")
+        else:
+            print("Error: Could not read frame.")
+            break
+
+    cap.release()
+
+
+if __name__ == '__main__':   
+    main()
